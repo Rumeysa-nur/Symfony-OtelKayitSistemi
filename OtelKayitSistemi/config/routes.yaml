@@ -1,0 +1,18 @@
+# config/routes.yaml
+kayit:
+    path: /kayit
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\KayitController::addClient
+
+home:
+    path: /home
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\HomepageController::ajaxAction
+    
+filter:
+    path: /filter
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\HomepageController::ajaxAction
+    # if the action is implemented as the __invoke() method of the
+    # controller class, you can skip the '::method_name' part:
+    # controller: App\Controller\BlogController
